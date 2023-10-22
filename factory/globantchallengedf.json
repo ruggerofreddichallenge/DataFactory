@@ -1,0 +1,9 @@
+{
+	"name": "globantchallengedf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1f23b4b4-1849-4910-acb0-34a980bc8e4c",
+		"tenantId": "86626ea7-88a7-4b61-bc7a-a49c9650ca0a"
+	}
+}

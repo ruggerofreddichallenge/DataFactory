@@ -1,0 +1,27 @@
+{
+	"name": "sql_jobs_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "job",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "challenge",
+			"table": "jobs"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

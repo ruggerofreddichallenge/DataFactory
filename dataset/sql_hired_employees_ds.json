@@ -1,0 +1,43 @@
+{
+	"name": "sql_hired_employees_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "datetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "department_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "job_id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "challenge",
+			"table": "hired_employees"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

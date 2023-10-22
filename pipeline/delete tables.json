@@ -1,0 +1,30 @@
+{
+	"name": "delete tables",
+	"properties": {
+		"activities": [
+			{
+				"name": "delete all",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[challenge].[delete_all_tables]"
+				},
+				"linkedServiceName": {
+					"referenceName": "SqlServer_ls",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-10-21T19:20:08Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

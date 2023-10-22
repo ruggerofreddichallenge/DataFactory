@@ -1,0 +1,27 @@
+{
+	"name": "sql_departments_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "department",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "challenge",
+			"table": "departments"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
